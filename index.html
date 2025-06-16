@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>شركة رويا ليبيا للدعاية والإعلان</title>
+  <title>شركة رؤيا ليبيا للدعاية والإعلان</title>
   <style>
     * {
       margin: 0;
@@ -15,13 +15,14 @@
     body {
       background-color: #fff;
       background-image: url('rshado.png');
-      background-size: 200px;
+      background-size: 180px;
       background-repeat: repeat;
       background-position: center;
       background-attachment: fixed;
-      opacity: 0.95;
+      opacity: 0.97;
       color: #111;
       line-height: 1.8;
+      background-blend-mode: lighten;
     }
 
     h2 {
@@ -39,7 +40,7 @@
       padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.93);
       border-radius: 10px;
     }
 
@@ -66,11 +67,11 @@
     }
 
     #logo-section img {
-      width: 220px;
+      width: 180px;
       background-color: #fff;
-      padding: 10px;
+      padding: 8px;
       border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      box-shadow: 0 0 15px rgba(0,0,0,0.08);
     }
 
     /* الشركات */
@@ -78,6 +79,7 @@
       background-color: #f5f5f5;
       padding: 40px 20px;
       border-radius: 10px;
+      overflow: hidden;
     }
 
     .partner-title {
@@ -90,29 +92,29 @@
 
     .scroll-container {
       display: flex;
-      overflow-x: auto;
-      gap: 40px;
-      padding-bottom: 15px;
-      scroll-behavior: smooth;
+      gap: 60px;
+      animation: scroll 20s linear infinite;
+    }
+
+    .scroll-wrapper {
+      overflow: hidden;
     }
 
     .scroll-container img {
       height: 100px;
       flex-shrink: 0;
-      transition: transform 0.3s ease;
+      filter: grayscale(20%);
+      transition: transform 0.3s ease, filter 0.3s ease;
     }
 
     .scroll-container img:hover {
       transform: scale(1.1);
+      filter: grayscale(0%);
     }
 
-    .scroll-container::-webkit-scrollbar {
-      height: 10px;
-    }
-
-    .scroll-container::-webkit-scrollbar-thumb {
-      background: #bbb;
-      border-radius: 5px;
+    @keyframes scroll {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
     }
 
     /* روابط التواصل */
@@ -163,38 +165,43 @@
 
   <!-- شعار -->
   <div id="logo-section">
-    <img src="roya.png" alt="شعار شركة رويا">
+    <img src="roya.png" alt="شعار شركة رؤيا">
   </div>
 
   <!-- من نحن -->
   <section id="about">
     <h2>من نحن</h2>
     <p>
-      تأسست شركة <strong>رويا ليبيا للطباعة والخدمات الإعلانية</strong> سنة 1999، وهي شركة رائدة في تقديم الحلول الدعائية المتكاملة للمؤسسات والشركات داخل ليبيا. نتميز بالاحترافية، الجودة العالية، والمصداقية في العمل.
+      تأسست شركة <strong>رؤيا ليبيا للطباعة والخدمات الإعلانية</strong> سنة 1999، وهي شركة رائدة في تقديم الحلول الدعائية المتكاملة للمؤسسات والشركات داخل ليبيا. نتميز بالاحترافية، الجودة العالية، والمصداقية في العمل.
     </p>
   </section>
 
   <!-- الشركات الممثلة -->
   <section id="partners">
     <div class="partner-title">الشركات التي نمثلها</div>
-    <div class="scroll-container">
-      <img src="cerruti1881.webp" alt="Cerruti 1881">
-      <img src="roland.webp" alt="Roland">
-      <img src="cosign.png" alt="Cosign">
+    <div class="scroll-wrapper">
+      <div class="scroll-container">
+        <img src="cerruti1881.webp" alt="Cerruti 1881">
+        <img src="roland.webp" alt="Roland">
+        <img src="cosign.png" alt="Cosign">
+        <img src="cerruti1881.webp" alt="Cerruti 1881"> <!-- مكرر لتكرار السلايدر -->
+        <img src="roland.webp" alt="Roland">
+        <img src="cosign.png" alt="Cosign">
+      </div>
     </div>
   </section>
 
   <!-- الخدمات -->
   <section id="services" style="padding: 50px; background: #f9f9f9;">
-  <h2 style="font-size: 30px; color: #b00000; text-align: center;">خدماتنا</h2>
-  <ul style="list-style: none; padding: 0; max-width: 700px; margin: auto; text-align: center;">
-    <li><a href="printing.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">📄 الطباعة بجميع أنواعها</a></li>
-    <li><a href="logo-design.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">🎨 تصميم الشعارات والهوية</a></li
-    <li><a href="road-signs.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">🚧 تنفيذ اللوحات الطرقية</a></li>
-    <li><a href="exhibitions.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">🏢 تجهيز المعارض</a></li>
-    <li><a href="gifts.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">🎁 الهدايا الترويجية</a></li>
-  </ul>
-</section>
+    <h2 style="font-size: 30px; color: #b00000; text-align: center;">خدماتنا</h2>
+    <ul style="list-style: none; padding: 0; max-width: 700px; margin: auto; text-align: center;">
+      <li><a href="printing.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">📄 الطباعة بجميع أنواعها</a></li>
+      <li><a href="logo-design.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">🎨 تصميم الشعارات والهوية</a></li>
+      <li><a href="road-signs.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">🚧 تنفيذ اللوحات الطرقية</a></li>
+      <li><a href="exhibitions.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">🏢 تجهيز المعارض</a></li>
+      <li><a href="gifts.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">🎁 الهدايا الترويجية</a></li>
+    </ul>
+  </section>
 
   <!-- تواصل معنا -->
   <section id="contact" style="text-align: center;">
