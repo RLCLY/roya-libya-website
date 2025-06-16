@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>شركة رويا ليبيا للدعاية والإعلان</title>
   <style>
     * {
@@ -13,9 +13,13 @@
     }
 
     body {
-      background: #fff url('rshado.png') no-repeat center center;
-      background-size: contain;
+      background-color: #fff;
+      background-image: url('rshado.png');
+      background-size: 200px;
+      background-repeat: repeat;
+      background-position: center;
       background-attachment: fixed;
+      opacity: 0.95;
       color: #111;
       line-height: 1.8;
     }
@@ -35,14 +39,19 @@
       padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
     }
 
     /* فيديو المقدمة */
     #intro {
-      position: relative;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
       width: 100%;
       height: 100vh;
-      overflow: hidden;
+      background: #000;
     }
 
     #intro video {
@@ -51,11 +60,9 @@
       object-fit: cover;
     }
 
-    /* شعار */
     #logo-section {
       text-align: center;
       padding: 30px;
-      background-color: rgba(255,255,255,0.9);
     }
 
     #logo-section img {
@@ -68,24 +75,44 @@
 
     /* الشركات */
     #partners {
-      background-color: #fafafa;
+      background-color: #f5f5f5;
       padding: 40px 20px;
-      overflow-x: auto;
+      border-radius: 10px;
+    }
+
+    .partner-title {
+      font-size: 30px;
+      font-weight: bold;
+      color: #d00000;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
     .scroll-container {
       display: flex;
+      overflow-x: auto;
       gap: 40px;
-      width: max-content;
+      padding-bottom: 15px;
+      scroll-behavior: smooth;
     }
 
     .scroll-container img {
       height: 100px;
+      flex-shrink: 0;
       transition: transform 0.3s ease;
     }
 
     .scroll-container img:hover {
       transform: scale(1.1);
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb {
+      background: #bbb;
+      border-radius: 5px;
     }
 
     /* روابط التواصل */
@@ -104,7 +131,7 @@
       font-weight: bold;
       color: #fff;
       text-decoration: none;
-      transition: background 0.3s ease;
+      transition: opacity 0.3s ease;
     }
 
     .instagram { background-color: #E1306C; }
@@ -114,24 +141,22 @@
     .social a:hover {
       opacity: 0.85;
     }
-
-    /* شريط أفقي للسحب */
-    #partners::-webkit-scrollbar {
-      height: 10px;
-    }
-
-    #partners::-webkit-scrollbar-thumb {
-      background: #ccc;
-      border-radius: 5px;
-    }
   </style>
+  <script>
+    // إخفاء الفيديو بعد ثانية ونصف
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        document.getElementById('intro').style.display = 'none';
+      }, 1500);
+    });
+  </script>
 </head>
 <body>
 
   <!-- مقدمة الفيديو -->
   <div id="intro">
-    <video autoplay muted playsinline onended="document.getElementById('intro').style.display='none'">
-      <source src="intro.mp4" type="video/mp4">
+    <video autoplay muted playsinline>
+      <source src="intro.mp4" type="video/mp4" />
       متصفحك لا يدعم الفيديو.
     </video>
   </div>
@@ -151,7 +176,7 @@
 
   <!-- الشركات الممثلة -->
   <section id="partners">
-    <h2 style="text-align:center;">الشركات التي نمثلها</h2>
+    <div class="partner-title">الشركات التي نمثلها</div>
     <div class="scroll-container">
       <img src="cerruti1881.webp" alt="Cerruti 1881">
       <img src="roland.webp" alt="Roland">
