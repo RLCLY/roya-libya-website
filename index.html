@@ -25,6 +25,37 @@
       background-blend-mode: lighten;
     }
 
+    /* الهيدر */
+    header {
+      background: linear-gradient(to left, #aee6ff, #d1f1ff);
+      padding: 50px 20px 80px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img.logo {
+      width: 160px;
+      background-color: #fff;
+      padding: 8px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 2;
+    }
+
+    header::after {
+      content: '';
+      background: url('roya.png') no-repeat center center;
+      background-size: 400px;
+      opacity: 0.05;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
     h2 {
       font-size: 32px;
       color: #b00000;
@@ -44,42 +75,13 @@
       border-radius: 10px;
     }
 
-    /* فيديو المقدمة */
-    #intro {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 9999;
-      width: 100%;
-      height: 100vh;
-      background: #000;
-    }
-
-    #intro video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    #logo-section {
-      text-align: center;
-      padding: 30px;
-    }
-
-    #logo-section img {
-      width: 180px;
-      background-color: #fff;
-      padding: 8px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.08);
-    }
-
     /* الشركات */
     #partners {
       background-color: #f5f5f5;
       padding: 40px 20px;
       border-radius: 10px;
       overflow: hidden;
+      position: relative;
     }
 
     .partner-title {
@@ -90,20 +92,20 @@
       margin-bottom: 30px;
     }
 
-    .scroll-container {
-      display: flex;
-      gap: 60px;
-      animation: scroll 20s linear infinite;
-    }
-
     .scroll-wrapper {
       overflow: hidden;
     }
 
+    .scroll-container {
+      display: flex;
+      gap: 60px;
+      animation: scroll 25s linear infinite;
+    }
+
     .scroll-container img {
-      height: 100px;
+      height: 70px;
       flex-shrink: 0;
-      filter: grayscale(20%);
+      filter: grayscale(30%);
       transition: transform 0.3s ease, filter 0.3s ease;
     }
 
@@ -163,10 +165,10 @@
     </video>
   </div>
 
-  <!-- شعار -->
-  <div id="logo-section">
-    <img src="roya.png" alt="شعار شركة رؤيا">
-  </div>
+  <!-- الهيدر الجديد -->
+  <header>
+    <img src="roya.png" class="logo" alt="شعار شركة رؤيا">
+  </header>
 
   <!-- من نحن -->
   <section id="about">
@@ -184,7 +186,7 @@
         <img src="cerruti1881.webp" alt="Cerruti 1881">
         <img src="roland.webp" alt="Roland">
         <img src="cosign.png" alt="Cosign">
-        <img src="cerruti1881.webp" alt="Cerruti 1881"> <!-- مكرر لتكرار السلايدر -->
+        <img src="cerruti1881.webp" alt="Cerruti 1881">
         <img src="roland.webp" alt="Roland">
         <img src="cosign.png" alt="Cosign">
       </div>
