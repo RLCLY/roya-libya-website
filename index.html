@@ -2,18 +2,39 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>شركة رويا ليبيا للدعاية والإعلان</title>
   <style>
     * {
-      margin: 0; padding: 0; box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     body {
-      background-color: #fff;
+      background: #fff url('rshado.png') no-repeat center center;
+      background-size: contain;
+      background-attachment: fixed;
       color: #111;
-      line-height: 1.6;
+      line-height: 1.8;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #b00000;
+      margin-bottom: 20px;
+    }
+
+    p, li {
+      font-size: 20px;
+      color: #333;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
     /* فيديو المقدمة */
@@ -30,79 +51,78 @@
       object-fit: cover;
     }
 
-    /* شعار الشركة */
+    /* شعار */
     #logo-section {
-      background-color: #fefefe;
-      padding: 30px;
       text-align: center;
+      padding: 30px;
+      background-color: rgba(255,255,255,0.9);
     }
 
     #logo-section img {
-      width: 200px;
+      width: 220px;
       background-color: #fff;
       padding: 10px;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
 
-    h2 {
-      color: #b00000;
-      margin-bottom: 10px;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    p, li {
-      font-size: 18px;
-      color: #333;
-    }
-
-    /* الشركات الممثلة */
+    /* الشركات */
     #partners {
-      overflow: hidden;
-      white-space: nowrap;
       background-color: #fafafa;
-      padding: 30px 10px;
+      padding: 40px 20px;
+      overflow-x: auto;
     }
 
-    .marquee {
-      display: inline-block;
-      animation: scroll 20s linear infinite;
+    .scroll-container {
+      display: flex;
+      gap: 40px;
+      width: max-content;
     }
 
-    .marquee img {
-      height: 80px;
-      margin: 0 30px;
-      vertical-align: middle;
+    .scroll-container img {
+      height: 100px;
+      transition: transform 0.3s ease;
     }
 
-    @keyframes scroll {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
+    .scroll-container img:hover {
+      transform: scale(1.1);
     }
 
-    /* التواصل */
+    /* روابط التواصل */
     .social {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 20px;
-      margin-top: 20px;
+      margin-top: 30px;
     }
 
     .social a {
-      text-decoration: none;
-      color: #fff;
-      background-color: #b00000;
-      padding: 10px 20px;
+      padding: 15px 25px;
       border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.3s ease;
     }
 
-    .whatsapp {
-      background-color: #25D366 !important;
+    .instagram { background-color: #E1306C; }
+    .facebook  { background-color: #1877F2; }
+    .whatsapp  { background-color: #25D366; }
+
+    .social a:hover {
+      opacity: 0.85;
+    }
+
+    /* شريط أفقي للسحب */
+    #partners::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    #partners::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -110,44 +130,44 @@
 
   <!-- مقدمة الفيديو -->
   <div id="intro">
-    <video autoplay muted playsinline onended="document.getElementById('intro').style.display='none'" >
+    <video autoplay muted playsinline onended="document.getElementById('intro').style.display='none'">
       <source src="intro.mp4" type="video/mp4">
-      متصفحك لا يدعم تشغيل الفيديو.
+      متصفحك لا يدعم الفيديو.
     </video>
   </div>
 
-  <!-- شعار الشركة -->
+  <!-- شعار -->
   <div id="logo-section">
     <img src="roya.png" alt="شعار شركة رويا">
   </div>
 
-  <!-- نبذة عن الشركة -->
+  <!-- من نحن -->
   <section id="about">
     <h2>من نحن</h2>
     <p>
-      تأسست شركة <strong>رويا ليبيا للطباعة والخدمات الإعلانية</strong> عام 1999، لتكون من أوائل الشركات الليبية الرائدة في مجال الدعاية والإعلان. نتميز بالإبداع، الجودة، والالتزام، ونسعى دائمًا لتقديم حلول دعائية متكاملة تواكب التطور.
+      تأسست شركة <strong>رويا ليبيا للطباعة والخدمات الإعلانية</strong> سنة 1999، وهي شركة رائدة في تقديم الحلول الدعائية المتكاملة للمؤسسات والشركات داخل ليبيا. نتميز بالاحترافية، الجودة العالية، والمصداقية في العمل.
     </p>
   </section>
 
   <!-- الشركات الممثلة -->
   <section id="partners">
-    <h2 style="text-align: center;">الشركات التي نمثلها</h2>
-    <div class="marquee">
+    <h2 style="text-align:center;">الشركات التي نمثلها</h2>
+    <div class="scroll-container">
       <img src="cerruti1881.webp" alt="Cerruti 1881">
       <img src="roland.webp" alt="Roland">
       <img src="cosign.png" alt="Cosign">
     </div>
   </section>
 
-  <!-- خدماتنا -->
+  <!-- الخدمات -->
   <section id="services">
     <h2>خدماتنا</h2>
     <ul>
       <li>الطباعة بجميع أنواعها</li>
       <li>تصميم الشعارات والهوية البصرية</li>
-      <li>تنفيذ اللوحات الإعلانية</li>
-      <li>تنفيذ اللوحات الطرقية الكبيرة</li>
-      <li>تنفيذ وتجهيز المعارض</li>
+      <li>تنفيذ اللوحات الإعلانية الداخلية والخارجية</li>
+      <li>تنفيذ اللوحات الطرقية</li>
+      <li>تنظيم وتجهيز المعارض</li>
       <li>توفير الهدايا الترويجية</li>
       <li>كل ما يخص مجال الدعاية والإعلان</li>
     </ul>
@@ -157,9 +177,9 @@
   <section id="contact" style="text-align: center;">
     <h2>تواصل معنا</h2>
     <div class="social">
-      <a href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank">إنستغرام</a>
-      <a href="https://www.facebook.com/share/1ASPQFBjoU/?mibextid=wwXIfr" target="_blank">فيسبوك</a>
-      <a href="https://wa.me/218914645601" class="whatsapp" target="_blank">تواصل واتساب</a>
+      <a class="instagram" href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank">إنستغرام</a>
+      <a class="facebook" href="https://www.facebook.com/share/1ASPQFBjoU/?mibextid=wwXIfr" target="_blank">فيسبوك</a>
+      <a class="whatsapp" href="https://wa.me/218914645601" target="_blank">واتساب</a>
     </div>
   </section>
 
