@@ -1,78 +1,145 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>تجهيز المعارض - شركة رؤيا ليبيا</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تجهيز المعارض - رؤيا ليبيا</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f9f9f9;
-      padding: 40px;
+      background-color: #fff;
+      background-image: url('rshado.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #111;
       line-height: 1.8;
-      color: #333;
     }
+
     h1 {
-      color: #673ab7;
+      text-align: center;
+      color: #b00000;
+      margin-top: 30px;
       font-size: 32px;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .intro h2 {
+      color: #333;
+      font-size: 26px;
       margin-bottom: 10px;
     }
-    p {
+
+    .intro p {
       font-size: 18px;
-      margin-top: 10px;
+      color: #444;
     }
-    .highlight {
-      color: #673ab7;
-      font-weight: bold;
-    }
+
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 20px;
-      margin-top: 30px;
+      margin: 40px auto;
+      padding: 0 20px;
+      max-width: 1000px;
     }
-    .gallery img {
-      width: 280px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      transition: transform 0.3s ease;
+
+    .gallery img, .gallery video {
+      width: 100%;
+      border-radius: 8px;
+      border: 4px solid #e0e0e0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .gallery img:hover {
+
+    .gallery img:hover, .gallery video:hover {
       transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      border-color: #b00000;
     }
-    a {
+
+    .contact {
+      text-align: center;
+      margin: 50px auto;
+      padding: 30px 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      max-width: 700px;
+    }
+
+    .contact h2 {
+      font-size: 28px;
+      color: #b00000;
+      margin-bottom: 20px;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .social a {
       display: inline-block;
-      margin-bottom: 30px;
-      color: #1877F2;
+      padding: 12px 20px;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
       text-decoration: none;
-      font-size: 18px;
+      transition: opacity 0.3s ease;
+    }
+
+    .instagram { background-color: #E1306C; }
+    .facebook  { background-color: #1877F2; }
+    .whatsapp  { background-color: #25D366; }
+
+    .social a:hover {
+      opacity: 0.85;
     }
   </style>
 </head>
 <body>
 
-  <a href="index.html">← الرجوع للصفحة الرئيسية</a>
+  <h1>تجهيز المعارض</h1>
 
-  <h1>تجهيز المعارض والمؤتمرات</h1>
-
-  <p>
-    في <span class="highlight">شركة رؤيا ليبيا</span> نُقدّم خدمات متكاملة لتصميم وتنفيذ <strong>أجنحة المعارض</strong> وتجهيز المساحات الخاصة بالمؤتمرات والفعاليات التجارية، باستخدام أفضل الخامات والأساليب العصرية.
-  </p>
-
-  <p>
-    <strong>ماذا نوفر لك؟</strong><br>
-    ✔ تصميم مبتكر وجذاب لجناح شركتك<br>
-    ✔ تنفيذ احترافي في وقت قياسي<br>
-    ✔ تجهيزات كاملة تشمل الطباعة، الأثاث، الإنارة، الشاشات، والمجسمات<br>
-    ✔ دعم فني قبل وأثناء الفعالية لضمان نجاح العرض
-  </p>
-
-  <p>
-    نجاحك في المعرض يبدأ من مدى ظهورك وتأثيرك البصري، دعنا نجعل حضورك لا يُنسى.
-  </p>
+  <div class="intro">
+    <h2>خدمة تجهيز المعارض والمؤتمرات</h2>
+    <p>
+      في <strong>رؤيا ليبيا</strong> نساعدك في إبراز نشاطك داخل المعارض والمؤتمرات من خلال تجهيز كامل احترافي للأجنحة والمعارض، يشمل الطباعة، التركيب، التصميم والإضاءة، بجودة عالية ووقت قياسي.
+    </p>
+    <p>
+      ✅ <strong>لماذا تختارنا؟</strong><br>
+      ✔ تصميم احترافي متكامل للمعرض<br>
+      ✔ تجهيز مطبوعات، هدايا ولوحات<br>
+      ✔ تركيب سريع في جميع المدن الليبية<br>
+      ✔ أسعار تنافسية وخدمة عملاء ممتازة
+    </p>
+  </div>
 
   <div class="gallery">
-    <img src="expo1.jpg" alt="تصميم جناح معرض">
-    <img src="expo2.jpg" alt="تجهيز فعالية أو مؤتمر">
+    <img src="i1.jpg" alt="تجهيز معرض 1">
+    <img src="i2.jpg" alt="تجهيز معرض 2">
+    <video src="i4.mp4" controls muted></video>
+    <img src="i3.jpg" alt="تجهيز معرض 3">
+  </div>
+
+  <div class="contact">
+    <h2>جاهز لمعرضك القادم؟ تواصل معنا 👇</h2>
+    <div class="social">
+      <a class="instagram" href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank">إنستغرام</a>
+      <a class="facebook" href="https://www.facebook.com/share/1ASPQFBjoU/?mibextid=wwXIfr" target="_blank">فيسبوك</a>
+      <a class="whatsapp" href="https://wa.me/218914645601" target="_blank">واتساب</a>
+    </div>
   </div>
 
 </body>
