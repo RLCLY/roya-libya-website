@@ -23,6 +23,9 @@
       color: #111;
       line-height: 1.8;
       background-blend-mode: lighten;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     /* الهيدر */
@@ -73,6 +76,8 @@
       margin: auto;
       background-color: rgba(255, 255, 255, 0.93);
       border-radius: 10px;
+      box-shadow: 0 0 15px rgb(0 0 0 / 0.05);
+      margin-bottom: 40px;
     }
 
     /* الشركات */
@@ -82,6 +87,7 @@
       border-radius: 10px;
       overflow: hidden;
       position: relative;
+      margin-bottom: 40px;
     }
 
     .partner-title {
@@ -107,6 +113,7 @@
       flex-shrink: 0;
       filter: grayscale(30%);
       transition: transform 0.3s ease, filter 0.3s ease;
+      cursor: pointer;
     }
 
     .scroll-container img:hover {
@@ -117,6 +124,43 @@
     @keyframes scroll {
       0%   { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
+    }
+
+    /* الخدمات */
+    #services h2 {
+      font-size: 30px;
+      color: #b00000;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #services ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #services ul li {
+      margin-bottom: 15px;
+    }
+
+    #services ul li a {
+      display: inline-block;
+      padding: 15px 20px;
+      font-size: 20px;
+      color: #000;
+      text-decoration: none;
+      border: 2px solid #b00000;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #services ul li a:hover {
+      background-color: #b00000;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(176, 0, 0, 0.5);
     }
 
     /* روابط التواصل */
@@ -145,25 +189,25 @@
     .social a:hover {
       opacity: 0.85;
     }
+
+    /* الفوتر */
+    footer {
+      background-color: #b00000;
+      color: #fff;
+      text-align: center;
+      padding: 25px 20px;
+      font-size: 18px;
+      margin-top: auto;
+      box-shadow: 0 -2px 8px rgb(176 0 0 / 0.7);
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
   </style>
-  <script>
-    // إخفاء الفيديو بعد ثانية ونصف
-    window.addEventListener('DOMContentLoaded', () => {
-      setTimeout(() => {
-        document.getElementById('intro').style.display = 'none';
-      }, 1500);
-    });
-  </script>
 </head>
 <body>
-
-  <!-- مقدمة الفيديو -->
-  <div id="intro">
-    <video autoplay muted playsinline>
-      <source src="intro.mp4" type="video/mp4" />
-      متصفحك لا يدعم الفيديو.
-    </video>
-  </div>
 
   <!-- الهيدر الجديد -->
   <header>
@@ -194,14 +238,14 @@
   </section>
 
   <!-- الخدمات -->
-  <section id="services" style="padding: 50px; background: #f9f9f9;">
-    <h2 style="font-size: 30px; color: #b00000; text-align: center;">خدماتنا</h2>
-    <ul style="list-style: none; padding: 0; max-width: 700px; margin: auto; text-align: center;">
-      <li><a href="printing.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">📄 الطباعة بجميع أنواعها</a></li>
-      <li><a href="logo-design.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">🎨 تصميم الشعارات والهوية</a></li>
-      <li><a href="road-signs.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">🚧 تنفيذ اللوحات الطرقية</a></li>
-      <li><a href="exhibitions.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">🏢 تجهيز المعارض</a></li>
-      <li><a href="gifts.html" style="display: block; padding: 15px; font-size: 20px; color: #000; text-decoration: none; border-bottom: 1px solid #ddd;">🎁 الهدايا الترويجية</a></li>
+  <section id="services">
+    <h2>خدماتنا</h2>
+    <ul>
+      <li><a href="printing.html">📄 الطباعة بجميع أنواعها</a></li>
+      <li><a href="logo-design.html">🎨 تصميم الشعارات والهوية</a></li>
+      <li><a href="road-signs.html">🚧 تنفيذ اللوحات الطرقية</a></li>
+      <li><a href="exhibitions.html">🏢 تجهيز المعارض</a></li>
+      <li><a href="gifts.html">🎁 الهدايا الترويجية</a></li>
     </ul>
   </section>
 
@@ -209,11 +253,17 @@
   <section id="contact" style="text-align: center;">
     <h2>تواصل معنا</h2>
     <div class="social">
-      <a class="instagram" href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank">إنستغرام</a>
-      <a class="facebook" href="https://www.facebook.com/share/1ASPQFBjoU/?mibextid=wwXIfr" target="_blank">فيسبوك</a>
-      <a class="whatsapp" href="https://wa.me/218914645601" target="_blank">واتساب</a>
+      <a class="instagram" href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank" rel="noopener noreferrer">إنستغرام</a>
+      <a class="facebook" href="https://www.facebook.com/share/1ASPQFBjoU/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">فيسبوك</a>
+      <a class="whatsapp" href="https://wa.me/218914645601" target="_blank" rel="noopener noreferrer">واتساب</a>
     </div>
   </section>
+
+  <!-- الفوتر -->
+  <footer>
+    جميع الحقوق محفوظة &copy; شركة رؤيا ليبيا للطباعة والخدمات الإعلانية 1999 - 2025<br />
+    للتواصل: <a href="mailto:info@royalibya.ly">info@royalibya.ly</a> - هاتف: 0914 646 5601
+  </footer>
 
 </body>
 </html>
