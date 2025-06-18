@@ -5,63 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>رؤيا ليبيا للدعاية والإعلان</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- الشريط العلوي -->
-  <div class="top-bar">
-    📍 طرابلس - ليبيا | ☎ 0914645601 | ✉ info@roya.ly
-  </div>
-
-  <!-- الشعار -->
-  <header>
+  <!-- الهيدر -->
+  <header class="navbar">
     <img src="roya.png" class="logo" alt="شعار الشركة" />
+    <nav>
+      <ul>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#partners">شركات نمثلها</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- من نحن -->
-  <section id="about">
+  <section id="about" class="section">
     <h2>من نحن</h2>
     <p>
-      نحن شركة <strong>رؤيا ليبيا</strong>، رواد في مجال الطباعة والإعلانات منذ أكثر من 20 عامًا. نسعى لتقديم خدمات دعائية بجودة عالية، تساهم في رفع مستوى علامتك التجارية ومكانتها بالسوق الليبي.
+      نحن شركة <strong>رؤيا ليبيا</strong>، نمتلك خبرة طويلة في تقديم خدمات الدعاية والطباعة وتصميم الهوية التجارية منذ أكثر من 20 عامًا.
     </p>
-    <ul>
-      <li>✅ خبرة واسعة ومعرفة عميقة بالسوق المحلي</li>
-      <li>🎯 تنفيذ دقيق واحترافي لتفاصيل المشاريع</li>
-      <li>🧠 فريق إبداعي في التصميم والدعاية</li>
-      <li>📦 أسعار منافسة وخدمات توصيل سريعة</li>
-    </ul>
   </section>
 
   <!-- خدماتنا -->
-  <section id="services">
+  <section id="services" class="section">
     <h2>خدماتنا</h2>
-    <ul>
-      <li><a href="printing.html">📄 خدمات الطباعة</a></li>
-      <li><a href="logo-design.html">🎨 تصميم الشعارات</a></li>
-      <li><a href="road-signs.html">🚧 اللوحات الطرقية</a></li>
-      <li><a href="exhibitions.html">🏢 تجهيز المعارض</a></li>
-      <li><a href="gifts.html">🎁 هدايا دعائية</a></li>
+    <ul class="service-list">
+      <li>📄 خدمات الطباعة</li>
+      <li>🎨 تصميم الشعارات</li>
+      <li>🚧 اللوحات الطرقية</li>
+      <li>🏢 تجهيز المعارض</li>
+      <li>🎁 هدايا دعائية</li>
     </ul>
   </section>
 
-  <!-- الشركات الممثلة -->
-  <section id="partners">
-    <div class="partner-title">شركات نمثلها</div>
-    <marquee behavior="scroll" direction="right" scrollamount="5">
-      <img src="cerruti1881.webp" alt="Cerruti 1881" />
-      <img src="roland.webp" alt="Roland" />
-      <img src="cosign.png" alt="Cosign" />
-    </marquee>
+  <!-- شركات نمثلها - سلايدر كل الصور -->
+  <section id="partners" class="section">
+    <h2>شركات نمثلها</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="cerruti1881.webp" alt="Cerruti 1881" /></div>
+        <div class="swiper-slide"><img src="cc1.jpg" alt="Cerruti Sample" /></div>
+        <div class="swiper-slide"><img src="cc2.jpg" alt="Cerruti Sample" /></div>
+        <div class="swiper-slide"><img src="cc3.jpg" alt="Cerruti Sample" /></div>
+        <div class="swiper-slide"><img src="cc4.jpg" alt="Cerruti Sample" /></div>
+        <div class="swiper-slide"><img src="cc5.jpg" alt="Cerruti Sample" /></div>
+        <div class="swiper-slide"><img src="cc6.jpg" alt="Cerruti Sample" /></div>
+
+        <div class="swiper-slide"><img src="roland.webp" alt="Roland" /></div>
+        <div class="swiper-slide"><img src="rr1.webp" alt="Roland Sample" /></div>
+        <div class="swiper-slide"><img src="rr2.webp" alt="Roland Sample" /></div>
+
+        <div class="swiper-slide"><img src="cosign.png" alt="Cosign" /></div>
+        <div class="swiper-slide"><img src="oo1.jpg" alt="Cosign Sample" /></div>
+        <div class="swiper-slide"><img src="oo2.jpg" alt="Cosign Sample" /></div>
+        <div class="swiper-slide"><img src="oo3.jpg" alt="Cosign Sample" /></div>
+      </div>
+    </div>
   </section>
 
   <!-- تواصل معنا -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>تواصل معنا</h2>
-    <p style="text-align:center;">نحن في خدمتك دائمًا، تواصل معنا عبر القنوات التالية:</p>
+    <p>📍 طرابلس - ليبيا | ☎ 0914645601 | ✉ info@roya.ly</p>
     <div class="social">
-      <a class="instagram" href="https://www.instagram.com/roya_graphics" target="_blank">إنستغرام</a>
-      <a class="facebook" href="https://www.facebook.com/share" target="_blank">فيسبوك</a>
-      <a class="whatsapp" href="https://wa.me/218914645601" target="_blank">واتساب</a>
+      <a href="https://www.instagram.com/roya_graphics" target="_blank">إنستغرام</a>
+      <a href="https://www.facebook.com/share" target="_blank">فيسبوك</a>
+      <a href="https://wa.me/218914645601" target="_blank">واتساب</a>
     </div>
   </section>
 
@@ -70,49 +84,27 @@
     &copy; 2025 شركة رؤيا ليبيا للدعاية والإعلان - جميع الحقوق محفوظة.
   </footer>
 
-  <!-- زر واتساب عائم -->
-  <a href="https://wa.me/218914645601" class="floating-whatsapp" target="_blank">💬 تواصل واتساب</a>
+  <!-- واتساب عائم -->
+  <a href="https://wa.me/218914645601" class="floating-whatsapp" target="_blank">💬</a>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        320: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 4 }
+      }
+    });
+  </script>
 
 </body>
 </html>
-<section id="partners">
-  <div class="partner-title">شركات نمثلها</div>
-
-  <div class="partners-group">
-    <div class="partner-logo">
-      <img src="cerruti1881.webp" alt="Cerruti 1881 Logo" />
-      <h3>شعار Cerruti 1881</h3>
-    </div>
-    <div class="partners-images">
-      <img src="cc1.jpg" alt="cc1" />
-      <img src="cc2.jpg" alt="cc2" />
-      <img src="cc3.jpg" alt="cc3" />
-      <img src="cc4.jpg" alt="cc4" />
-      <img src="cc5.jpg" alt="cc5" />
-      <img src="cc6.jpg" alt="cc6" />
-    </div>
-  </div>
-
-  <div class="partners-group">
-    <div class="partner-logo">
-      <img src="roland.webp" alt="Roland Logo" />
-      <h3>شعار Roland</h3>
-    </div>
-    <div class="partners-images">
-      <img src="rr1.webp" alt="rr1" />
-      <img src="rr2.webp" alt="rr2" />
-    </div>
-  </div>
-
-  <div class="partners-group">
-    <div class="partner-logo">
-      <img src="cosign.png" alt="Cosign Logo" />
-      <h3>شعار Cosign</h3>
-    </div>
-    <div class="partners-images">
-      <img src="oo1.jpg" alt="oo1" />
-      <img src="oo2.jpg" alt="oo2" />
-      <img src="oo3.jpg" alt="oo3" />
-    </div>
-  </div>
-</section>
