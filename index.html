@@ -1,111 +1,80 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>رؤيا ليبيا للدعاية والإعلان</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  direction: rtl;
+  background: #f8f8f8;
+  color: #333;
+}
 
-  <!-- الشريط العلوي -->
-  <div class="top-bar">
-    📍 طرابلس - ليبيا | ☎ 0914645601 | ✉ info@roya.ly
-  </div>
+.top-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
 
-  <!-- الشعار -->
-  <header>
-    <img src="https://via.placeholder.com/200x60?text=Roya+Logo" class="logo" alt="شعار الشركة" />
-  </header>
+.logo {
+  display: block;
+  margin: 20px auto;
+  max-width: 200px;
+}
 
-  <!-- سلايدر رئيسي -->
-  <div class="swiper hero-swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="https://source.unsplash.com/1200x400/?printing" alt="طباعة" /></div>
-      <div class="swiper-slide"><img src="https://source.unsplash.com/1200x400/?advertising" alt="إعلان" /></div>
-      <div class="swiper-slide"><img src="https://source.unsplash.com/1200x400/?design" alt="تصميم" /></div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
 
-  <!-- من نحن -->
-  <section id="about">
-    <h2>من نحن</h2>
-    <p>
-      نحن شركة <strong>رؤيا ليبيا</strong>، خبرة في مجال الطباعة والإعلانات لأكثر من 20 عامًا. نقدم خدمات إبداعية ترفع من قيمة علامتك التجارية.
-    </p>
-    <ul>
-      <li>✅ خبرة بالسوق الليبي</li>
-      <li>🎯 تنفيذ احترافي للمشاريع</li>
-      <li>🧠 فريق تصميم مبدع</li>
-      <li>📦 أسعار منافسة وتوصيل سريع</li>
-    </ul>
-  </section>
+h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
 
-  <!-- خدماتنا -->
-  <section id="services">
-    <h2>خدماتنا</h2>
-    <ul>
-      <li>📄 خدمات الطباعة</li>
-      <li>🎨 تصميم الشعارات</li>
-      <li>🚧 اللوحات الطرقية</li>
-      <li>🏢 تجهيز المعارض</li>
-      <li>🎁 هدايا دعائية</li>
-    </ul>
-  </section>
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
 
-  <!-- سلايدر الشركات الممثلة -->
-  <section id="partners">
-    <h2>شركات نمثلها</h2>
-    <div class="swiper partners-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Cerruti_logo.svg/320px-Cerruti_logo.svg.png" alt="Cerruti 1881" /></div>
-        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Roland_logo.svg/320px-Roland_logo.svg.png" alt="Roland" /></div>
-        <div class="swiper-slide"><img src="https://www.cosign.be/sites/default/files/styles/logo/public/logo/Cosign-Logo_0.png" alt="Cosign" /></div>
-      </div>
-    </div>
-  </section>
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
 
-  <!-- تواصل معنا -->
-  <section id="contact">
-    <h2>تواصل معنا</h2>
-    <p style="text-align:center;">نحن في خدمتك دائمًا عبر:</p>
-    <div class="social">
-      <a href="https://www.instagram.com/roya_graphics" target="_blank">إنستغرام</a>
-      <a href="https://www.facebook.com/share" target="_blank">فيسبوك</a>
-      <a href="https://wa.me/218914645601" target="_blank">واتساب</a>
-    </div>
-  </section>
+.social a {
+  text-decoration: none;
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
 
-  <!-- الفوتر -->
-  <footer>
-    &copy; 2025 شركة رؤيا ليبيا - جميع الحقوق محفوظة.
-  </footer>
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+}
 
-  <!-- زر واتساب عائم -->
-  <a href="https://wa.me/218914645601" class="floating-whatsapp" target="_blank">💬 واتساب</a>
+.floating-whatsapp {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+}
 
-  <!-- سكربتات -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    new Swiper(".hero-swiper", {
-      loop: true,
-      pagination: { el: ".swiper-pagination", clickable: true },
-      autoplay: { delay: 3000 }
-    });
-
-    new Swiper(".partners-swiper", {
-      loop: true,
-      slidesPerView: 3,
-      spaceBetween: 20,
-      autoplay: { delay: 2000 },
-      breakpoints: {
-        768: { slidesPerView: 4 },
-        1024: { slidesPerView: 5 }
-      }
-    });
-  </script>
-
-</body>
-</html>
+.swiper img {
+  width: 100%;
+  border-radius: 10px;
+}
