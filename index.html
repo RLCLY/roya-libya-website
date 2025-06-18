@@ -4,37 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>رؤيا ليبيا للدعاية والإعلان</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- الهيدر -->
-  <header class="navbar">
-    <img src="roya.png" class="logo" alt="شعار الشركة" />
-    <nav>
-      <ul>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#services">خدماتنا</a></li>
-        <li><a href="#partners">شركات نمثلها</a></li>
-        <li><a href="#contact">تواصل معنا</a></li>
-      </ul>
-    </nav>
+  <!-- الشريط العلوي -->
+  <div class="top-bar">
+    📍 طرابلس - ليبيا | ☎ 0914645601 | ✉ info@roya.ly
+  </div>
+
+  <!-- الشعار -->
+  <header>
+    <img src="https://via.placeholder.com/200x60?text=Roya+Logo" class="logo" alt="شعار الشركة" />
   </header>
 
+  <!-- سلايدر رئيسي -->
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://source.unsplash.com/1200x400/?printing" alt="طباعة" /></div>
+      <div class="swiper-slide"><img src="https://source.unsplash.com/1200x400/?advertising" alt="إعلان" /></div>
+      <div class="swiper-slide"><img src="https://source.unsplash.com/1200x400/?design" alt="تصميم" /></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
   <!-- من نحن -->
-  <section id="about" class="section">
+  <section id="about">
     <h2>من نحن</h2>
     <p>
-      نحن شركة <strong>رؤيا ليبيا</strong>، نمتلك خبرة طويلة في تقديم خدمات الدعاية والطباعة وتصميم الهوية التجارية منذ أكثر من 20 عامًا.
+      نحن شركة <strong>رؤيا ليبيا</strong>، خبرة في مجال الطباعة والإعلانات لأكثر من 20 عامًا. نقدم خدمات إبداعية ترفع من قيمة علامتك التجارية.
     </p>
+    <ul>
+      <li>✅ خبرة بالسوق الليبي</li>
+      <li>🎯 تنفيذ احترافي للمشاريع</li>
+      <li>🧠 فريق تصميم مبدع</li>
+      <li>📦 أسعار منافسة وتوصيل سريع</li>
+    </ul>
   </section>
 
   <!-- خدماتنا -->
-  <section id="services" class="section">
+  <section id="services">
     <h2>خدماتنا</h2>
-    <ul class="service-list">
+    <ul>
       <li>📄 خدمات الطباعة</li>
       <li>🎨 تصميم الشعارات</li>
       <li>🚧 اللوحات الطرقية</li>
@@ -43,35 +55,22 @@
     </ul>
   </section>
 
-  <!-- شركات نمثلها - سلايدر كل الصور -->
-  <section id="partners" class="section">
+  <!-- سلايدر الشركات الممثلة -->
+  <section id="partners">
     <h2>شركات نمثلها</h2>
-    <div class="swiper mySwiper">
+    <div class="swiper partners-swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="cerruti1881.webp" alt="Cerruti 1881" /></div>
-        <div class="swiper-slide"><img src="cc1.jpg" alt="Cerruti Sample" /></div>
-        <div class="swiper-slide"><img src="cc2.jpg" alt="Cerruti Sample" /></div>
-        <div class="swiper-slide"><img src="cc3.jpg" alt="Cerruti Sample" /></div>
-        <div class="swiper-slide"><img src="cc4.jpg" alt="Cerruti Sample" /></div>
-        <div class="swiper-slide"><img src="cc5.jpg" alt="Cerruti Sample" /></div>
-        <div class="swiper-slide"><img src="cc6.jpg" alt="Cerruti Sample" /></div>
-
-        <div class="swiper-slide"><img src="roland.webp" alt="Roland" /></div>
-        <div class="swiper-slide"><img src="rr1.webp" alt="Roland Sample" /></div>
-        <div class="swiper-slide"><img src="rr2.webp" alt="Roland Sample" /></div>
-
-        <div class="swiper-slide"><img src="cosign.png" alt="Cosign" /></div>
-        <div class="swiper-slide"><img src="oo1.jpg" alt="Cosign Sample" /></div>
-        <div class="swiper-slide"><img src="oo2.jpg" alt="Cosign Sample" /></div>
-        <div class="swiper-slide"><img src="oo3.jpg" alt="Cosign Sample" /></div>
+        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Cerruti_logo.svg/320px-Cerruti_logo.svg.png" alt="Cerruti 1881" /></div>
+        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Roland_logo.svg/320px-Roland_logo.svg.png" alt="Roland" /></div>
+        <div class="swiper-slide"><img src="https://www.cosign.be/sites/default/files/styles/logo/public/logo/Cosign-Logo_0.png" alt="Cosign" /></div>
       </div>
     </div>
   </section>
 
   <!-- تواصل معنا -->
-  <section id="contact" class="section">
+  <section id="contact">
     <h2>تواصل معنا</h2>
-    <p>📍 طرابلس - ليبيا | ☎ 0914645601 | ✉ info@roya.ly</p>
+    <p style="text-align:center;">نحن في خدمتك دائمًا عبر:</p>
     <div class="social">
       <a href="https://www.instagram.com/roya_graphics" target="_blank">إنستغرام</a>
       <a href="https://www.facebook.com/share" target="_blank">فيسبوك</a>
@@ -81,27 +80,29 @@
 
   <!-- الفوتر -->
   <footer>
-    &copy; 2025 شركة رؤيا ليبيا للدعاية والإعلان - جميع الحقوق محفوظة.
+    &copy; 2025 شركة رؤيا ليبيا - جميع الحقوق محفوظة.
   </footer>
 
-  <!-- واتساب عائم -->
-  <a href="https://wa.me/218914645601" class="floating-whatsapp" target="_blank">💬</a>
+  <!-- زر واتساب عائم -->
+  <a href="https://wa.me/218914645601" class="floating-whatsapp" target="_blank">💬 واتساب</a>
 
-  <!-- Swiper JS -->
+  <!-- سكربتات -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
-      spaceBetween: 20,
+    new Swiper(".hero-swiper", {
       loop: true,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
+      pagination: { el: ".swiper-pagination", clickable: true },
+      autoplay: { delay: 3000 }
+    });
+
+    new Swiper(".partners-swiper", {
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 20,
+      autoplay: { delay: 2000 },
       breakpoints: {
-        320: { slidesPerView: 2 },
-        768: { slidesPerView: 3 },
-        1024: { slidesPerView: 4 }
+        768: { slidesPerView: 4 },
+        1024: { slidesPerView: 5 }
       }
     });
   </script>
