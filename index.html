@@ -16,22 +16,22 @@
       font-family: "Tajawal", sans-serif;
       direction: rtl;
       background-color: #f4f6f8;
-      color: #333;
+      color: #005b7f;
     }
 
     header {
       text-align: center;
-      padding: 30px 15px 15px;
+      padding: 40px 15px 20px;
     }
 
     header img {
-      width: 180px;
+      width: 220px;
       border-radius: 10px;
     }
 
     h1 {
       margin: 15px 0 5px;
-      font-size: 28px;
+      font-size: 30px;
       font-weight: 700;
     }
 
@@ -51,6 +51,48 @@
       box-shadow: 0 2px 12px rgba(0,0,0,0.05);
     }
 
+    .features {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    .features h2 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 30px;
+      color: #005b7f;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    .feature-item img {
+      width: 36px;
+      margin-left: 15px;
+    }
+
+    .feature-text {
+      line-height: 1.8;
+    }
+
+    .feature-title {
+      font-weight: bold;
+      font-size: 20px;
+      color: #005b7f;
+    }
+
+    .feature-desc {
+      font-size: 16px;
+      color: #444;
+    }
+
     section {
       max-width: 1100px;
       margin: auto;
@@ -65,7 +107,7 @@
       text-align: center;
       font-size: 26px;
       margin-bottom: 35px;
-      color: #1d1d1d;
+      color: #005b7f;
     }
 
     .service {
@@ -85,6 +127,7 @@
       font-weight: bold;
       font-size: 22px;
       margin: 15px 0 10px;
+      color: #005b7f;
     }
 
     .more-btn {
@@ -105,7 +148,7 @@
 
     .rocket {
       text-align: center;
-      background-color: #9de2f3; /* خلفية بنفس لون خلفية الصورة */
+      background-color: #9de2f3; /* لون خلفية الصاروخ */
       padding: 40px 20px;
       border-radius: 12px;
       margin-top: 50px;
@@ -132,15 +175,20 @@
 
     @media (max-width: 768px) {
       header img {
-        width: 140px;
+        width: 150px;
       }
 
-      .service img {
-        width: 100%;
+      .feature-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .feature-item img {
+        margin-bottom: 10px;
       }
 
       h1 {
-        font-size: 22px;
+        font-size: 24px;
       }
 
       h2 {
@@ -167,6 +215,43 @@
     فريقنا يتكون من مصممين محترفين وفنيين بخبرات محلية ودولية.  
     نعمل بشغف لتطوير صورة عملائنا وتحقيق انتشار أوسع لأعمالهم.  
     هدفنا هو أن تكون "رؤياك" واضحة ومؤثرة في كل مكان.
+  </div>
+
+  <!-- ماذا يميزنا -->
+  <div class="features">
+    <h2>ماذا يميزنا</h2>
+
+    <div class="feature-item">
+      <img src="h4.jpg" alt="صح">
+      <div class="feature-text">
+        <div class="feature-title">خدمات احترافية</div>
+        <div class="feature-desc">متخصصون دعاية وتسويق</div>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <img src="h4.jpg" alt="صح">
+      <div class="feature-text">
+        <div class="feature-title">استلام بالموعد</div>
+        <div class="feature-desc">لا تستلم خدمتك إلا وأنت راضٍ</div>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <img src="h4.jpg" alt="صح">
+      <div class="feature-text">
+        <div class="feature-title">وسائل دفع آمنة</div>
+        <div class="feature-desc">متاح أكثر من طريقة دفع آمنة</div>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <img src="h4.jpg" alt="صح">
+      <div class="feature-text">
+        <div class="feature-title">دعم 24/7</div>
+        <div class="feature-desc">دائمًا في انتظار تواصلك</div>
+      </div>
+    </div>
   </div>
 
   <!-- الخدمات -->
