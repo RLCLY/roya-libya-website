@@ -25,18 +25,18 @@
     }
 
     header img {
-      width: 220px;
+      width: 280px; /* تم التكبير */
       border-radius: 10px;
     }
 
     h1 {
       margin: 15px 0 5px;
-      font-size: 30px;
+      font-size: 34px; /* تم التكبير */
       font-weight: 700;
     }
 
     .established {
-      font-size: 16px;
+      font-size: 20px; /* تم التكبير */
       color: #777;
     }
 
@@ -165,27 +165,33 @@
       color: #007bff;
     }
 
-    /* شريط التواصل */
-    .contact-bar {
+    .contact-section {
       text-align: center;
-      background-color: #e9f7fc;
-      padding: 30px 15px;
+      background: #fff;
+      margin: 30px auto;
+      padding: 25px 15px;
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .contact-section h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
       color: #005b7f;
     }
 
-    .contact-bar a {
+    .contact-links a {
+      display: block;
+      margin: 10px auto;
       color: #005b7f;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .contact-bar a:hover {
-      text-decoration: underline;
-    }
-
-    .contact-bar div {
-      margin-bottom: 10px;
       font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .contact-links a:hover {
+      color: #007bff;
     }
 
     footer {
@@ -198,7 +204,7 @@
 
     @media (max-width: 768px) {
       header img {
-        width: 150px;
+        width: 200px;
       }
 
       .feature-item {
@@ -211,7 +217,7 @@
       }
 
       h1 {
-        font-size: 24px;
+        font-size: 26px;
       }
 
       h2 {
@@ -311,13 +317,14 @@
       <div class="rocket-text">رؤيا ليبيا - رؤيتك للشهرة 🚀</div>
     </div>
 
-    <!-- شريط التواصل -->
-    <div class="contact-bar">
-      <div>📞 واتساب: <a href="https://wa.me/218914645601">0914645601</a></div>
-      <div>📱 اتصل بنا: <a href="tel:+218915222467">+218 91‑5222467</a></div>
-      <div style="margin-top: 10px;">
-        <a href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank">📷 Instagram</a> | 
+    <!-- قسم روابط التواصل -->
+    <div class="contact-section">
+      <h3>تواصل معنا</h3>
+      <div class="contact-links">
+        <a href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank">📸 Instagram</a>
         <a href="https://www.facebook.com/share/19Cqvefc9E/?mibextid=wwXIfr" target="_blank">📘 Facebook</a>
+        <a href="https://wa.me/218914645601" target="_blank">💬 WhatsApp: 0914645601</a>
+        <a href="tel:+218915222467">📞 اتصل بنا: +218 91‑5222467</a>
       </div>
     </div>
   </section>
