@@ -2,87 +2,203 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>شركة رؤيا ليبيا للدعاية والإعلان</title>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tajawal', sans-serif;
+      background: #f8f9fa;
+      color: #1c1c1c;
+      direction: rtl;
+    }
+
+    /* شريط التواصل */
+    .top-bar {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .top-bar span {
+      margin: 0 10px;
+      font-weight: bold;
+      color: #ffd700;
+    }
+
+    /* الهيدر */
+    header {
+      background: linear-gradient(to right, #d0efff, #e8f9ff);
+      padding: 40px 20px 60px;
+      text-align: center;
+    }
+
+    header .logo {
+      width: 200px;
+      border-radius: 12px;
+      background: #fff;
+      padding: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ماذا يميزنا */
+    .features {
+      background-color: #fff;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .features h2 {
+      text-align: center;
+      color: #ba0000;
+      margin-bottom: 25px;
+      font-size: 28px;
+      border-bottom: 2px solid #ba0000;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      font-size: 18px;
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .features li img {
+      width: 22px;
+      margin-left: 10px;
+    }
+
+    /* خدماتنا */
+    .services {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 40px 30px;
+      background-color: rgba(255,255,255,0.96);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+
+    .services h2 {
+      font-size: 32px;
+      color: #ba0000;
+      margin-bottom: 25px;
+      text-align: center;
+      border-bottom: 2px solid #ba0000;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .services li {
+      margin-bottom: 15px;
+    }
+
+    .services li a {
+      display: block;
+      background-color: #f7f7f7;
+      padding: 15px;
+      font-size: 19px;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      border-right: 6px solid #0099cc;
+    }
+
+    .services li a:hover {
+      background-color: #e0f7ff;
+    }
+
+    /* rocket section */
+    .rocket {
+      background: url('e0e0682a-0683-491a-9c5f-bbd9f226211e.jpeg') no-repeat center center;
+      background-size: cover;
+      padding: 100px 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    /* الفوتر */
+    footer {
+      text-align: center;
+      font-size: 15px;
+      color: #666;
+      margin: 40px 0 20px;
+    }
+
+    @media (max-width: 768px) {
+      header .logo {
+        width: 150px;
+      }
+
+      .features h2,
+      .services h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- شريط تواصل -->
+  <!-- شريط التواصل -->
   <div class="top-bar">
-    📞 <a href="tel:+218915222467">0915222467</a> |
-    💬 <a href="https://wa.me/218914645601" target="_blank">0914645601</a>
+    <span>📞 اتصال: 0915222467</span> | <span>💬 واتساب: 0914645601</span>
   </div>
 
-  <!-- رأس الصفحة -->
+  <!-- الشعار -->
   <header>
-    <img src="roya.png" alt="شعار رؤيا ليبيا" class="logo" />
-    <h1>شركة رؤيا ليبيا للدعاية والخدمات الإعلانية</h1>
-    <p class="founded">تأسست سنة 1999</p>
+    <img src="roya.png" class="logo" alt="شعار الشركة">
   </header>
 
   <!-- ماذا يميزنا -->
   <section class="features">
     <h2>ماذا يميزنا</h2>
     <ul>
-      <li><img src="h4.jpg" alt="صح"> خدمات احترافية – متخصصون دعاية وتسويق</li>
-      <li><img src="h4.jpg" alt="صح"> إستلام بالموعد – لا تستلم خدمتك إلا وأنت راضٍ</li>
-      <li><img src="h4.jpg" alt="صح"> وسائل دفع آمنة – متاح أكثر من طريقة دفع آمنة</li>
-      <li><img src="h4.jpg" alt="صح"> دعم 24/7 – دائمًا في إنتظار تواصلك</li>
+      <li><img src="h4.jpg" alt="صح"> جودة عالية في تنفيذ الأعمال الإعلانية</li>
+      <li><img src="h4.jpg" alt="صح"> التزام بالمواعيد</li>
+      <li><img src="h4.jpg" alt="صح"> أسعار مناسبة وخدمة عملاء ممتازة</li>
+      <li><img src="h4.jpg" alt="صح"> فريق ذو خبرة لأكثر من 20 عامًا</li>
     </ul>
   </section>
 
   <!-- خدماتنا -->
   <section class="services">
     <h2>خدماتنا</h2>
-
-    <div class="service">
-      <img src="rrrooo.jpg" alt="قسم الطباعة">
-      <h3>قسم الطباعة</h3>
-      <a href="printing.html" class="btn">رؤية المزيد</a>
-    </div>
-
-    <div class="service">
-      <img src="rrooo.jpg" alt="قسم اللوحات الطرقية">
-      <h3>قسم اللوحات الطرقية</h3>
-      <a href="road-signs.html" class="btn">رؤية المزيد</a>
-    </div>
-
-    <div class="service">
-      <img src="00.jpg" alt="قسم المعارض">
-      <h3>قسم تجهيز المعارض</h3>
-      <a href="exhibitions.html" class="btn">رؤية المزيد</a>
-    </div>
-
-    <div class="service">
-      <img src="hrr.jpg" alt="قسم الهدايا الدعائية">
-      <h3>قسم الهدايا الدعائية</h3>
-      <a href="gifts.html" class="btn">رؤية المزيد</a>
-    </div>
+    <ul>
+      <li><a href="printing.html">📄 خدمات الطباعة</a></li>
+      <li><a href="logo-design.html">🎨 تصميم الشعارات</a></li>
+      <li><a href="road-signs.html">🚧 اللوحات الطرقية</a></li>
+      <li><a href="exhibitions.html">🏢 تجهيز المعارض</a></li>
+      <li><a href="gifts.html">🎁 هدايا دعائية</a></li>
+    </ul>
   </section>
 
-  <!-- قسم الصاروخ -->
+  <!-- خلفية الصاروخ -->
   <section class="rocket">
-    <div class="rocket-inner">
-      <img src="ssrr.png" alt="صاروخ" />
-      <div class="rocket-text">رؤيا ليبيا - رؤيتك للشهرة 🚀</div>
-    </div>
-  </section>
-
-  <!-- تواصل معنا -->
-  <section class="contact">
-    <h2>تواصل معنا</h2>
-    <div class="social">
-      <a href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank" class="instagram">إنستغرام</a>
-      <a href="https://www.facebook.com/share/1ASPQFBjoU/?mibextid=wwXIfr" target="_blank" class="facebook">فيسبوك</a>
-      <a href="https://wa.me/218914645601" target="_blank" class="whatsapp">واتساب</a>
-    </div>
+    نحن نأخذ علامتك التجارية إلى الأعلى 🚀
   </section>
 
   <!-- الفوتر -->
   <footer>
-    &copy; 2025 شركة رؤيا ليبيا للدعاية والخدمات الإعلانية - جميع الحقوق محفوظة.
+    &copy; 2025 شركة رؤيا ليبيا للدعاية والإعلان - جميع الحقوق محفوظة.
   </footer>
 
 </body>
