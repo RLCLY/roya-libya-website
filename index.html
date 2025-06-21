@@ -2,180 +2,207 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>شركة رؤيا ليبيا للدعاية والخدمات الإعلانية</title>
+  <title>رؤيا ليبيا للدعاية والخدمات الإعلانية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #b3e5fc;
-      color: #111;
+      font-family: "Tajawal", sans-serif;
+      direction: rtl;
+      background-color: #f4f6f8;
+      color: #333;
     }
 
     header {
-      background-color: #fff;
       text-align: center;
-      padding: 30px 10px 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 30px 15px 15px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-      color: #222;
+    header img {
+      width: 180px;
+      border-radius: 10px;
     }
 
-    header .established {
+    h1 {
+      margin: 15px 0 5px;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .established {
       font-size: 16px;
-      color: #555;
-      margin-top: 5px;
+      color: #777;
     }
 
-    .rocket-banner {
-      text-align: center;
-      margin: 20px auto;
-    }
-
-    .rocket-banner img {
-      width: 260px;
-    }
-
-    .rocket-banner .slogan {
-      font-size: 22px;
-      font-weight: bold;
-      color: #d32f2f;
-      margin-top: 10px;
+    .intro {
+      max-width: 850px;
+      margin: 25px auto 40px;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      line-height: 2;
+      font-size: 18px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
     }
 
     section {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
       background: #fff;
+      padding: 30px 20px;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      margin-bottom: 30px;
     }
 
     h2 {
       text-align: center;
-      color: #d32f2f;
-      margin-bottom: 30px;
-      font-size: 28px;
-      border-bottom: 2px solid #d32f2f;
-      display: inline-block;
-      padding-bottom: 10px;
-    }
-
-    .service-box {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      font-size: 26px;
+      margin-bottom: 35px;
+      color: #1d1d1d;
     }
 
     .service {
-      background: #fafafa;
-      padding: 15px;
-      border-radius: 10px;
+      margin-bottom: 50px;
       text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
     .service img {
-      max-width: 100%;
-      height: 150px;
-      border-radius: 6px;
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
-    .service h3 {
-      margin: 15px 0 10px;
-      font-size: 20px;
-    }
-
-    .service a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 16px;
-      background-color: #ffc107;
-      color: #000;
+    .service-title {
       font-weight: bold;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: background 0.3s;
+      font-size: 22px;
+      margin: 15px 0 10px;
     }
 
-    .service a:hover {
-      background-color: #ffca28;
+    .more-btn {
+      display: inline-block;
+      margin-top: 5px;
+      padding: 12px 25px;
+      background: #FFD700;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .more-btn:hover {
+      background: #e5c200;
+    }
+
+    .rocket {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .rocket img {
+      width: 220px;
+    }
+
+    .rocket-text {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 12px;
+      color: #007bff;
     }
 
     footer {
       text-align: center;
-      font-size: 15px;
-      color: #444;
+      background: #222;
+      color: #fff;
       padding: 20px;
-      background-color: #f1f1f1;
-      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header img {
+        width: 140px;
+      }
+
+      .service img {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- شعار واسم الشركة -->
+  <!-- الشعار -->
   <header>
+    <img src="roya.png" alt="شعار الشركة">
     <h1>شركة رؤيا ليبيا للدعاية والخدمات الإعلانية</h1>
-    <div class="established">تأسست 1999</div>
+    <div class="established">تأسست سنة 1999</div>
   </header>
 
-  <!-- صورة الصاروخ -->
-  <div class="rocket-banner">
-    <img src="ssrr.jpg" alt="رؤيا ليبيا - صاروخ">
-    <div class="slogan">رؤيا ليبيا - رؤيتك للشهرة</div>
+  <!-- نبذة عن الشركة -->
+  <div class="intro">
+    تعد شركة <strong>رؤيا ليبيا</strong> من أبرز شركات الدعاية والإعلان في ليبيا، بخبرة تمتد لأكثر من 20 عامًا.  
+    نؤمن أن الإعلان الذكي يصنع الفرق ويعزز حضور العلامة التجارية في السوق.  
+    نقدم خدمات شاملة بدءًا من التصميم وحتى التنفيذ بجودة واحترافية عالية.  
+    نواكب أحدث تقنيات الطباعة والتصميم لتقديم نتائج استثنائية.  
+    فريقنا يتكون من مصممين محترفين وفنيين بخبرات محلية ودولية.  
+    نعمل بشغف لتطوير صورة عملائنا وتحقيق انتشار أوسع لأعمالهم.  
+    هدفنا هو أن تكون "رؤياك" واضحة ومؤثرة في كل مكان.
   </div>
 
-  <!-- قسم خدماتنا -->
+  <!-- الخدمات -->
   <section>
     <h2>خدماتنا</h2>
-    <div class="service-box">
-      <div class="service">
-        <img src="rrrooo.jpg" alt="خدمة الطباعة">
-        <h3>خدمات الطباعة</h3>
-        <a href="printing.html">رؤية المزيد</a>
-      </div>
-      <div class="service">
-        <img src="rrooo.jpg" alt="لوحات طرقية">
-        <h3>اللوحات الطرقية</h3>
-        <a href="road-signs.html">رؤية المزيد</a>
-      </div>
-      <div class="service">
-        <img src="00.jpg" alt="تجهيز المعارض">
-        <h3>تجهيز المعارض</h3>
-        <a href="exhibitions.html">رؤية المزيد</a>
-      </div>
-      <div class="service">
-        <img src="hoor.jpg" alt="هدايا دعائية">
-        <h3>هدايا دعائية</h3>
-        <a href="gifts.html">رؤية المزيد</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- تواصل معنا -->
-  <section>
-    <h2>تواصل معنا</h2>
-    <p style="text-align:center;">تابعنا أو تواصل معنا عبر المنصات التالية:</p>
-    <div style="text-align:center; margin-top: 15px;">
-      <a href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank" style="margin: 0 10px; color:#E1306C; font-weight: bold;">إنستغرام</a>
-      |
-      <a href="https://www.facebook.com/share/1ASPQFBjoU/?mibextid=wwXIfr" target="_blank" style="margin: 0 10px; color:#1877F2; font-weight: bold;">فيسبوك</a>
-      |
-      <a href="https://wa.me/218914645601" target="_blank" style="margin: 0 10px; color:#25D366; font-weight: bold;">واتساب</a>
+    <div class="service">
+      <img src="rrrooo.jpg" alt="قسم الطباعة">
+      <div class="service-title">قسم الطباعة</div>
+      <a href="printing.html" class="more-btn">رؤية المزيد</a>
+    </div>
+
+    <div class="service">
+      <img src="rrooo.jpg" alt="قسم اللوحات الطرقية">
+      <div class="service-title">قسم اللوحات الطرقية</div>
+      <a href="road-signs.html" class="more-btn">رؤية المزيد</a>
+    </div>
+
+    <div class="service">
+      <img src="00.jpg" alt="قسم المعارض">
+      <div class="service-title">قسم تجهيز المعارض</div>
+      <a href="exhibitions.html" class="more-btn">رؤية المزيد</a>
+    </div>
+
+    <div class="service">
+      <img src="hoor.jpg" alt="قسم الهدايا الدعائية">
+      <div class="service-title">قسم الهدايا الدعائية</div>
+      <a href="gifts.html" class="more-btn">رؤية المزيد</a>
+    </div>
+
+    <div class="rocket">
+      <img src="ssrr.png" alt="صاروخ">
+      <div class="rocket-text">رؤيا ليبيا - رؤيتك للشهرة 🚀</div>
     </div>
   </section>
 
   <!-- الفوتر -->
   <footer>
-    تأسست 1999<br>
-    &copy; 2025 شركة رؤيا ليبيا للدعاية والإعلان - جميع الحقوق محفوظة.
+    &copy; 2025 شركة رؤيا ليبيا للدعاية والخدمات الإعلانية - جميع الحقوق محفوظة.
   </footer>
 
 </body>
