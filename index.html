@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>رؤيا ليبيا للدعاية والإعلان</title>
+  <meta name="description" content="شركة رؤيا ليبيا للدعاية والإعلان - نقدم خدمات الطباعة، تصميم الشعارات، اللوحات الطرقية، تجهيز المعارض والهدايا الدعائية بجودة واحترافية.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
       margin: 0;
@@ -14,6 +16,19 @@
       color: #111;
       line-height: 1.8;
       overflow-x: hidden;
+    }
+
+    a.cta {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #ba0000;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 10;
     }
 
     header {
@@ -87,6 +102,7 @@
       padding: 40px 20px;
       border-radius: 12px;
       text-align: center;
+      overflow: hidden;
     }
 
     .partner-title {
@@ -98,20 +114,32 @@
 
     .scroll-container {
       display: flex;
+      animation: scroll 20s linear infinite;
+      gap: 60px;
+      width: max-content;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 50px;
+      align-items: center;
+    }
+
+    .scroll-wrapper {
+      overflow: hidden;
+      width: 100%;
     }
 
     .scroll-container img {
-      height: 70px;
-      filter: grayscale(50%);
+      height: 50px;
+      filter: grayscale(60%);
       transition: 0.4s ease;
     }
 
     .scroll-container img:hover {
       filter: none;
-      transform: scale(1.05);
+      transform: scale(1.1);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
 
     .social {
@@ -164,6 +192,8 @@
 </head>
 <body>
 
+  <a class="cta" href="#contact">احجز خدمتك الآن</a>
+
   <!-- الشعار -->
   <header>
     <img src="roya.png" class="logo" alt="شعار الشركة">
@@ -192,10 +222,16 @@
   <!-- الشركات الممثلة -->
   <section id="partners">
     <div class="partner-title">شركات نمثلها</div>
-    <div class="scroll-container">
-      <img src="cerruti1881.webp" alt="Cerruti 1881">
-      <img src="roland.webp" alt="Roland">
-      <img src="cosign.png" alt="Cosign">
+    <div class="scroll-wrapper">
+      <div class="scroll-container">
+        <img src="cerruti1881.webp" alt="Cerruti 1881">
+        <img src="roland.webp" alt="Roland">
+        <img src="cosign.png" alt="Cosign">
+        <!-- مكرر لخلق تأثير التمرير -->
+        <img src="cerruti1881.webp" alt="Cerruti 1881">
+        <img src="roland.webp" alt="Roland">
+        <img src="cosign.png" alt="Cosign">
+      </div>
     </div>
   </section>
 
@@ -203,6 +239,7 @@
   <section id="contact">
     <h2>تواصل معنا</h2>
     <p style="text-align:center;">نحن في خدمتك دائمًا، تواصل معنا عبر القنوات التالية:</p>
+    <p style="text-align:center;">📞 0914645601</p>
     <div class="social">
       <a class="instagram" href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank">إنستغرام</a>
       <a class="facebook" href="https://www.facebook.com/share/1ASPQFBjoU/?mibextid=wwXIfr" target="_blank">فيسبوك</a>
