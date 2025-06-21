@@ -3,252 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>رؤيا ليبيا للدعاية والإعلان</title>
-  <meta name="description" content="شركة رؤيا ليبيا للدعاية والإعلان - نقدم خدمات الطباعة، تصميم الشعارات، اللوحات الطرقية، تجهيز المعارض والهدايا الدعائية بجودة واحترافية.">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>شركة رؤيا ليبيا للدعاية والخدمات الإعلانية</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #ffffff url('rshado.png') no-repeat center center fixed;
-      background-size: 350px;
+      background-color: #b3e5fc;
       color: #111;
-      line-height: 1.8;
-      overflow-x: hidden;
-    }
-
-    a.cta {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      background: #ba0000;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      z-index: 10;
     }
 
     header {
-      background: linear-gradient(to right, #d0efff, #e8f9ff);
-      padding: 50px 20px 80px;
+      background-color: #fff;
       text-align: center;
-      position: relative;
+      padding: 30px 10px 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
-    header img.logo {
-      width: 180px;
-      border-radius: 12px;
-      background: #fff;
-      padding: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      position: relative;
-      z-index: 2;
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      color: #222;
+    }
+
+    header .established {
+      font-size: 16px;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    .rocket-banner {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .rocket-banner img {
+      width: 260px;
+    }
+
+    .rocket-banner .slogan {
+      font-size: 22px;
+      font-weight: bold;
+      color: #d32f2f;
+      margin-top: 10px;
     }
 
     section {
       max-width: 1000px;
-      margin: 60px auto;
-      padding: 40px 30px;
-      background-color: rgba(255,255,255,0.96);
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
     h2 {
-      font-size: 32px;
-      color: #ba0000;
-      margin-bottom: 25px;
       text-align: center;
-      border-bottom: 2px solid #ba0000;
+      color: #d32f2f;
+      margin-bottom: 30px;
+      font-size: 28px;
+      border-bottom: 2px solid #d32f2f;
       display: inline-block;
       padding-bottom: 10px;
     }
 
-    p, li {
-      font-size: 18px;
-      color: #333;
-    }
-
-    #services ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    #services li {
-      margin-bottom: 15px;
-    }
-
-    #services li a {
-      display: block;
-      background-color: #f7f7f7;
-      padding: 15px;
-      font-size: 19px;
-      color: #000;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-      border-right: 6px solid #0099cc;
-    }
-
-    #services li a:hover {
-      background-color: #e0f7ff;
-    }
-
-    #partners {
-      background-color: #f0f0f0;
-      padding: 40px 20px;
-      border-radius: 12px;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    .partner-title {
-      font-size: 26px;
-      font-weight: bold;
-      color: #d00000;
-      margin-bottom: 30px;
-    }
-
-    .scroll-container {
-      display: flex;
-      animation: scroll 20s linear infinite;
-      gap: 60px;
-      width: max-content;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .scroll-wrapper {
-      overflow: hidden;
-      width: 100%;
-    }
-
-    .scroll-container img {
-      height: 50px;
-      filter: grayscale(60%);
-      transition: 0.4s ease;
-    }
-
-    .scroll-container img:hover {
-      filter: none;
-      transform: scale(1.1);
-    }
-
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    .social {
-      display: flex;
-      justify-content: center;
+    .service-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 30px;
     }
 
-    .social a {
-      padding: 12px 20px;
-      border-radius: 5px;
-      font-size: 18px;
+    .service {
+      background: #fafafa;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .service img {
+      max-width: 100%;
+      height: 150px;
+      border-radius: 6px;
+    }
+
+    .service h3 {
+      margin: 15px 0 10px;
+      font-size: 20px;
+    }
+
+    .service a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #ffc107;
+      color: #000;
       font-weight: bold;
-      color: #fff;
       text-decoration: none;
-      transition: 0.3s ease;
+      border-radius: 4px;
+      transition: background 0.3s;
     }
 
-    .instagram { background-color: #E1306C; }
-    .facebook  { background-color: #1877F2; }
-    .whatsapp  { background-color: #25D366; }
-
-    .social a:hover {
-      opacity: 0.85;
+    .service a:hover {
+      background-color: #ffca28;
     }
 
     footer {
       text-align: center;
-      font-size: 16px;
-      color: #666;
-      margin: 40px 0 20px;
-    }
-
-    @media (max-width: 768px) {
-      header img.logo {
-        width: 140px;
-      }
-
-      h2 {
-        font-size: 26px;
-      }
-
-      .scroll-container {
-        gap: 30px;
-      }
+      font-size: 15px;
+      color: #444;
+      padding: 20px;
+      background-color: #f1f1f1;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <a class="cta" href="#contact">احجز خدمتك الآن</a>
-
-  <!-- الشعار -->
+  <!-- شعار واسم الشركة -->
   <header>
-    <img src="roya.png" class="logo" alt="شعار الشركة">
+    <h1>شركة رؤيا ليبيا للدعاية والخدمات الإعلانية</h1>
+    <div class="established">تأسست 1999</div>
   </header>
 
-  <!-- من نحن -->
-  <section id="about">
-    <h2>من نحن</h2>
-    <p>
-      نحن شركة <strong>رؤيا ليبيا</strong>، رواد في مجال الطباعة والإعلانات منذ أكثر من 20 عامًا. نسعى لتقديم خدمات دعائية بجودة عالية، تساهم في رفع مستوى علامتك التجارية ومكانتها بالسوق الليبي.
-    </p>
-  </section>
+  <!-- صورة الصاروخ -->
+  <div class="rocket-banner">
+    <img src="ssrr.jpg" alt="رؤيا ليبيا - صاروخ">
+    <div class="slogan">رؤيا ليبيا - رؤيتك للشهرة</div>
+  </div>
 
-  <!-- خدماتنا -->
-  <section id="services">
+  <!-- قسم خدماتنا -->
+  <section>
     <h2>خدماتنا</h2>
-    <ul>
-      <li><a href="printing.html">📄 خدمات الطباعة</a></li>
-      <li><a href="logo-design.html">🎨 تصميم الشعارات</a></li>
-      <li><a href="road-signs.html">🚧 اللوحات الطرقية</a></li>
-      <li><a href="exhibitions.html">🏢 تجهيز المعارض</a></li>
-      <li><a href="gifts.html">🎁 هدايا دعائية</a></li>
-    </ul>
-  </section>
-
-  <!-- الشركات الممثلة -->
-  <section id="partners">
-    <div class="partner-title">شركات نمثلها</div>
-    <div class="scroll-wrapper">
-      <div class="scroll-container">
-        <img src="cerruti1881.webp" alt="Cerruti 1881">
-        <img src="roland.webp" alt="Roland">
-        <img src="cosign.png" alt="Cosign">
-        <!-- مكرر لخلق تأثير التمرير -->
-        <img src="cerruti1881.webp" alt="Cerruti 1881">
-        <img src="roland.webp" alt="Roland">
-        <img src="cosign.png" alt="Cosign">
+    <div class="service-box">
+      <div class="service">
+        <img src="rrrooo.jpg" alt="خدمة الطباعة">
+        <h3>خدمات الطباعة</h3>
+        <a href="printing.html">رؤية المزيد</a>
+      </div>
+      <div class="service">
+        <img src="rrooo.jpg" alt="لوحات طرقية">
+        <h3>اللوحات الطرقية</h3>
+        <a href="road-signs.html">رؤية المزيد</a>
+      </div>
+      <div class="service">
+        <img src="00.jpg" alt="تجهيز المعارض">
+        <h3>تجهيز المعارض</h3>
+        <a href="exhibitions.html">رؤية المزيد</a>
+      </div>
+      <div class="service">
+        <img src="hoor.jpg" alt="هدايا دعائية">
+        <h3>هدايا دعائية</h3>
+        <a href="gifts.html">رؤية المزيد</a>
       </div>
     </div>
   </section>
 
   <!-- تواصل معنا -->
-  <section id="contact">
+  <section>
     <h2>تواصل معنا</h2>
-    <p style="text-align:center;">نحن في خدمتك دائمًا، تواصل معنا عبر القنوات التالية:</p>
-    <p style="text-align:center;">📞 0914645601</p>
-    <div class="social">
-      <a class="instagram" href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank">إنستغرام</a>
-      <a class="facebook" href="https://www.facebook.com/share/1ASPQFBjoU/?mibextid=wwXIfr" target="_blank">فيسبوك</a>
-      <a class="whatsapp" href="https://wa.me/218914645601" target="_blank">واتساب</a>
+    <p style="text-align:center;">تابعنا أو تواصل معنا عبر المنصات التالية:</p>
+    <div style="text-align:center; margin-top: 15px;">
+      <a href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank" style="margin: 0 10px; color:#E1306C; font-weight: bold;">إنستغرام</a>
+      |
+      <a href="https://www.facebook.com/share/1ASPQFBjoU/?mibextid=wwXIfr" target="_blank" style="margin: 0 10px; color:#1877F2; font-weight: bold;">فيسبوك</a>
+      |
+      <a href="https://wa.me/218914645601" target="_blank" style="margin: 0 10px; color:#25D366; font-weight: bold;">واتساب</a>
     </div>
   </section>
 
-  <!-- الحقوق -->
+  <!-- الفوتر -->
   <footer>
+    تأسست 1999<br>
     &copy; 2025 شركة رؤيا ليبيا للدعاية والإعلان - جميع الحقوق محفوظة.
   </footer>
 
