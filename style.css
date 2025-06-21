@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Tajawal", sans-serif;
   direction: rtl;
-  background: #f8f8f8;
+  background-color: #f8f8f8;
   color: #333;
+  line-height: 1.7;
 }
 
 .top-bar {
@@ -25,11 +30,10 @@ body {
 section {
   padding: 40px 20px;
   max-width: 900px;
-  margin: auto;
-  background: #fff;
-  margin-bottom: 20px;
+  margin: 20px auto;
+  background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 h2 {
@@ -43,13 +47,21 @@ h2 {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+ul li {
   line-height: 2;
+  position: relative;
+  padding-right: 20px;
 }
 
 ul li::before {
   content: "•";
+  position: absolute;
+  right: 0;
   color: #007bff;
-  margin-left: 8px;
+  font-size: 18px;
 }
 
 .social {
@@ -62,22 +74,22 @@ ul li::before {
 
 .social a {
   text-decoration: none;
-  background: #007bff;
-  color: white;
+  background-color: #007bff;
+  color: #fff;
   padding: 10px 18px;
   border-radius: 6px;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
   font-weight: bold;
 }
 
 .social a:hover {
-  background: #0056b3;
+  background-color: #0056b3;
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background: #222;
+  background-color: #222;
   color: #fff;
   font-size: 14px;
 }
@@ -87,19 +99,19 @@ footer {
   position: fixed;
   left: 20px;
   bottom: 20px;
-  background: #25D366;
-  color: white;
+  background-color: #25D366;
+  color: #fff;
   padding: 12px 20px;
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
   font-size: 16px;
 }
 
 .floating-whatsapp:hover {
-  background: #1ebc59;
+  background-color: #1ebc59;
 }
 
 .floating-whatsapp::before {
