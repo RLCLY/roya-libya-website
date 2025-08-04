@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <title>رؤيا ليبيا للدعاية والخدمات الإعلانية</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- تحسين SEO -->
+  <meta name="description" content="شركة رؤيا ليبيا للدعاية والإعلان بخبرة تفوق 20 عامًا، تقدم خدمات طباعة، لوحات طرقية، شاشات LED، تجهيز معارض، وهدايا دعائية باحترافية.">
+  <meta name="keywords" content="رؤيا ليبيا, دعاية, إعلان, طباعة, شاشات LED, لوحات طرقية, تجهيز معارض, هدايا دعائية">
+  <meta name="author" content="شركة رؤيا ليبيا">
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
@@ -19,24 +25,45 @@
       color: #005b7f;
     }
 
+    /* شريط التنقل */
+    nav {
+      background: #005b7f;
+      color: #fff;
+      padding: 12px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
     header {
       text-align: center;
       padding: 40px 15px 20px;
     }
 
     header img {
-      width: 280px; /* تم التكبير */
+      width: 280px;
       border-radius: 10px;
     }
 
     h1 {
       margin: 15px 0 5px;
-      font-size: 34px; /* تم التكبير */
+      font-size: 34px;
       font-weight: 700;
     }
 
     .established {
-      font-size: 20px; /* تم التكبير */
+      font-size: 20px;
       color: #777;
     }
 
@@ -203,6 +230,10 @@
     }
 
     @media (max-width: 768px) {
+      nav {
+        font-size: 14px;
+      }
+
       header img {
         width: 200px;
       }
@@ -228,15 +259,23 @@
 </head>
 <body>
 
+  <!-- شريط التنقل -->
+  <nav>
+    <a href="#about">من نحن</a>
+    <a href="#features">مميزاتنا</a>
+    <a href="#services">الخدمات</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+
   <!-- الشعار -->
   <header>
-    <img src="roya.png" alt="شعار الشركة">
+    <img src="roya.png" alt="شعار شركة رؤيا ليبيا للدعاية والإعلان">
     <h1>شركة رؤيا ليبيا للدعاية والخدمات الإعلانية</h1>
     <div class="established">تأسست سنة 1999</div>
   </header>
 
   <!-- نبذة عن الشركة -->
-  <div class="intro">
+  <div class="intro" id="about">
     تعد شركة <strong>رؤيا ليبيا</strong> من أبرز شركات الدعاية والإعلان في ليبيا، بخبرة تمتد لأكثر من 20 عامًا.  
     نؤمن أن الإعلان الذكي يصنع الفرق ويعزز حضور العلامة التجارية في السوق.  
     نقدم خدمات شاملة بدءًا من التصميم وحتى التنفيذ بجودة واحترافية عالية.  
@@ -247,11 +286,11 @@
   </div>
 
   <!-- ماذا يميزنا -->
-  <div class="features">
+  <div class="features" id="features">
     <h2>ماذا يميزنا</h2>
 
     <div class="feature-item">
-      <img src="h4.jpg" alt="صح">
+      <img src="h4.jpg" alt="أيقونة الخدمات الاحترافية">
       <div class="feature-text">
         <div class="feature-title">خدمات احترافية</div>
         <div class="feature-desc">متخصصون دعاية وتسويق</div>
@@ -259,7 +298,7 @@
     </div>
 
     <div class="feature-item">
-      <img src="h4.jpg" alt="صح">
+      <img src="h4.jpg" alt="أيقونة الالتزام بالمواعيد">
       <div class="feature-text">
         <div class="feature-title">استلام بالموعد</div>
         <div class="feature-desc">لا تستلم خدمتك إلا وأنت راضٍ</div>
@@ -267,7 +306,7 @@
     </div>
 
     <div class="feature-item">
-      <img src="h4.jpg" alt="صح">
+      <img src="h4.jpg" alt="أيقونة الدفع الآمن">
       <div class="feature-text">
         <div class="feature-title">وسائل دفع آمنة</div>
         <div class="feature-desc">متاح أكثر من طريقة دفع آمنة</div>
@@ -275,7 +314,7 @@
     </div>
 
     <div class="feature-item">
-      <img src="h4.jpg" alt="صح">
+      <img src="h4.jpg" alt="أيقونة الدعم الفني">
       <div class="feature-text">
         <div class="feature-title">دعم 24/7</div>
         <div class="feature-desc">دائمًا في انتظار تواصلك</div>
@@ -284,47 +323,47 @@
   </div>
 
   <!-- الخدمات -->
-  <section>
+  <section id="services">
     <h2>خدماتنا</h2>
 
     <div class="service">
-      <img src="rrrooo.jpg" alt="قسم الطباعة">
+      <img src="rrrooo.jpg" alt="خدمة الطباعة">
       <div class="service-title">قسم الطباعة</div>
       <a href="printing.html" class="more-btn">رؤية المزيد</a>
     </div>
 
     <div class="service">
-      <img src="rrooo.jpg" alt="قسم اللوحات الطرقية">
+      <img src="rrooo.jpg" alt="خدمة اللوحات الطرقية">
       <div class="service-title">قسم اللوحات الطرقية</div>
       <a href="road-signs.html" class="more-btn">رؤية المزيد</a>
     </div>
-    
-<div class="service">
-  <img src="LED.jpg" alt="شاشات عرض LED">
-  <div class="service-title">شاشات عرض LED</div>
-  <a href="led-screens.html" class="more-btn">رؤية المزيد</a>
-</div>
-    
+
     <div class="service">
-      <img src="00.jpg" alt="قسم المعارض">
+      <img src="LED.jpg" alt="شاشات عرض LED">
+      <div class="service-title">شاشات عرض LED</div>
+      <a href="led-screens.html" class="more-btn">رؤية المزيد</a>
+    </div>
+
+    <div class="service">
+      <img src="00.jpg" alt="تجهيز المعارض">
       <div class="service-title">قسم تجهيز المعارض</div>
       <a href="exhibitions.html" class="more-btn">رؤية المزيد</a>
     </div>
 
     <div class="service">
-      <img src="hrr.jpg" alt="قسم الهدايا الدعائية">
+      <img src="hrr.jpg" alt="هدايا دعائية">
       <div class="service-title">قسم الهدايا الدعائية</div>
       <a href="gifts.html" class="more-btn">رؤية المزيد</a>
     </div>
 
     <!-- قسم الصاروخ -->
     <div class="rocket">
-      <img src="ssrr.png" alt="صاروخ">
+      <img src="ssrr.png" alt="أيقونة صاروخ - شعار الحملة الإعلانية">
       <div class="rocket-text">رؤيا ليبيا - رؤيتك للشهرة 🚀</div>
     </div>
 
     <!-- قسم روابط التواصل -->
-    <div class="contact-section">
+    <div class="contact-section" id="contact">
       <h3>تواصل معنا</h3>
       <div class="contact-links">
         <a href="https://www.instagram.com/roya_graphics?igsh=YWRoMDhmZG8zcnAw" target="_blank">📸 Instagram</a>
